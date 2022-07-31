@@ -1,3 +1,11 @@
+# Enterprise Server 3.2.16
+# Features
+# Bug Fixes
+# Documentation
+# Manintenance
+# Dependency update
+# Contributors
+
 changelog:
   exclude:
     labels:
@@ -16,4 +24,35 @@ changelog:
     - title: Other Changes
       labels:
         - "*"
-        # test
+
+autolabeler:
+  - label: feature
+    branch:
+      - '/^feat(ure)?[/-].+/'
+  - label: bug
+    branch:
+      - '/^fix[/-].+/'
+  - label: chore
+    branch:
+      - '/^chore[/-].+/'
+  - label: refactor
+    branch:
+      - '/(refactor|refactoring)[/-].+/'
+  - label: documentation
+    branch:
+      - '/doc(umentation)[/-].+/'
+    files:
+      - '*.md'
+  - label: enhancement
+    branch:
+      - '/(enhancement|improve)[/-].+/'
+
+# GITHUB release-notes
+# Enterprise Server 3.2.16
+#       - Features
+#       - Security fixes
+#       - Bug fixes
+#       - Changes
+#       - Known issues
+#       - Deprecations
+#       - Backups
