@@ -6,6 +6,12 @@
 # Dependency update
 # Contributors
 
+name-template: 'v$RESOLVED_VERSION 🌈'
+tag-template: 'v$RESOLVED_VERSION'
+exclude-labels:
+  - 'release'
+  - 'auto'
+
 changelog:
   exclude:
     labels:
@@ -28,7 +34,7 @@ changelog:
 autolabeler:
   - label: feature
     branch:
-      - '/^feat(ure)?[/-].+/'
+      - '/^m(ure)?[/-].+/'
   - label: bug
     branch:
       - '/^fix[/-].+/'
